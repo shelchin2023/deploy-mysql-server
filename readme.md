@@ -22,3 +22,8 @@ services:
       -MYSQL_PASSWORD
 EOF
 ```
+
+# RUN
+```
+docker compose -f compose.yml -f override.yml up -d 
+```
