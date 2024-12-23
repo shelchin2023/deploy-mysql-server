@@ -1,10 +1,9 @@
-git clone https://github.com/shelchin2023/deploy-mysql-server.git mysql-demo
+`git clone https://github.com/shelchin2023/deploy-mysql-server.git mysql-demo`
 
 # 创建环境变量
 ```
 cd mysql-demo
 touch .env
-export SECRET_KEY_BASE=$(openssl rand -base64 48)
 export MYSQL_ROOT_PASSWORD=$(openssl rand -hex 16)
 export MYSQL_PASSWORD=$(openssl rand -hex 16)
 echo "MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD" >> .env
